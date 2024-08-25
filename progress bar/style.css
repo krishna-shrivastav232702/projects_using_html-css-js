@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body{
+    background: #e3efd7;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill{
+    width:195px;
+    height:195px;
+    /* background: cornflowerblue; */
+    position:relative;
+}
+.outer{
+    height: 195px;
+    width:195px;
+    border-radius: 50%;
+    padding:23.5px;
+     box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                    -6px -6px 10px -1px rgba(255,255,255,0.7); 
+    /* border: 2px solid red; */
+    
+}
+.inner{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    box-shadow:inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+#number{
+    font-weight: 600;
+    color:#555;
+
+}
+circle{
+    fill:none;
+    stroke:url(#GradientColor);
+    stroke-width:20px;
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation:anim 2s linear forwards;  
+}
+svg{
+   
+
+    position:relative;
+    left:5px;
+    bottom:190px;
+}
+
+@keyframes anim {
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
